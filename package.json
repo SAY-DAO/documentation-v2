@@ -45,5 +45,8 @@
       "next": "patches/next.patch",
       "eslint-plugin-tailwindcss@3.17.3": "patches/eslint-plugin-tailwindcss.patch"
     }
+  },
+  "dependencies": {
+    "@svgr/webpack": "^8.1.0"
   }
 }
