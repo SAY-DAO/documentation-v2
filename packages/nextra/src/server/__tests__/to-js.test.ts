@@ -6,7 +6,7 @@ import { convertToPageMap } from '../page-map/to-page-map.js'
 
 describe('convertPageMapToJs()', () => {
   it('should work for docs example', async () => {
-    const cwd = path.join(CWD, '..', '..', 'examples', 'docs')
+    const cwd = path.join(CWD, '..', '..', 'projects', 'docs')
     const filePaths = await findMetaAndPageFilePaths({
       dir: path.join(cwd, 'src/app'),
       cwd,

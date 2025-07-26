@@ -4,7 +4,7 @@ export const usPageMap: PageMapItem[] = [
   {
     data: {
       index: 'Introduction',
-      examples: 'Examples',
+      projects: 'Projects',
       blog: 'Blog'
     }
   },

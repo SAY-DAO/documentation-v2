@@ -39,7 +39,7 @@ pnpm --filter nextra-theme-docs build
 ### Development
 
 You can also debug them together with a website locally. For instance, to start
-`examples/docs` locally, run
+`projects/docs` locally, run
 
 ```bash
 pnpm --filter example-docs dev

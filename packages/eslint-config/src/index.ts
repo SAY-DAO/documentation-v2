@@ -131,7 +131,7 @@ const config: Config = tseslint.config(
   },
   // Rules for React files
   {
-    files: ['{packages,examples,docs}/**'],
+    files: ['{packages,projects,docs}/**'],
     plugins: {
       'react-hooks': eslintPluginReactHooks,
       '@next/next': eslintPluginNext

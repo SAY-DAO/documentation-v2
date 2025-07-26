@@ -39,7 +39,7 @@ export default function () {
 ```",
     "public": "",
     "remarks": "This hook was created to make prototyping easier and our documentation
-examples clearer. Although it is OK to use this hook in production, in
+projects clearer. Although it is OK to use this hook in production, in
 practice you may want to use a more sophisticated state management solution
 like Zustand {@link https://reactflow.dev/docs/guides/state-management/} instead.",
     "returns": "- `edges`: The current array of edges. You might pass this directly to the `edges` prop of your
