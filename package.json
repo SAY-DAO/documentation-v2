@@ -19,7 +19,6 @@
     "version": "changeset version"
   },
   "devDependencies": {
-    "@types/webpack": "^5.28.5",
     "@changesets/cli": "2.29.4",
     "@rollup/plugin-alias": "5.1.1",
     "@types/node": "^24.0.15",

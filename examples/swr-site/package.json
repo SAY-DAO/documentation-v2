@@ -16,6 +16,7 @@
     "types:check": "tsc --noEmit"
   },
   "dependencies": {
+    "@types/webpack": "^5.28.5",
     "markdown-to-jsx": "^7.4.0",
     "next": "^15.0.2",
     "nextra": "workspace:*",
