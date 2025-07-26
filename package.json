@@ -7,7 +7,7 @@
     "build:all": "turbo run build",
     "clean": "rm -rf .turbo && pnpm -r exec sh -c 'rm -rf dist .next .turbo'",
     "dev": "turbo run dev --filter=./packages/\\*",
-    "dev:theme-i18n": "turbo run dev --filter=swr-site...",
+    "dev:theme-i18n": "turbo run dev --filter=docs-site...",
     "dev:theme-custom-theme": "turbo run dev --filter=custom-theme... --filter=!docs",
     "lint": "ESLINT_USE_FLAT_CONFIG=true eslint --config packages/eslint-config/src/index.ts --cache --max-warnings 0 .",
     "lint:prettier": "prettier --config packages/prettier-config/src/index.js --cache --check --ignore-path .gitignore --ignore-path .prettierignore .",
