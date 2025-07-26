@@ -281,22 +281,22 @@ const config: Config = tseslint.config(
     }
   },
 
-  // ⚙️ SWR-site example
+  // ⚙️ docs-site project
   {
     // ...TAILWIND_CONFIG,
-    files: ['projects/swr-site/**'],
+    files: ['projects/docs-site/**'],
     settings: {
       tailwindcss: {
         cssFiles: [
-          'projects/swr-site/app/[lang]/styles.css',
-          'projects/swr-site/app/_components/features.css',
+          'projects/docs-site/app/[lang]/styles.css',
+          'projects/docs-site/app/_components/features.css',
           'packages/nextra-theme-docs/dist/style.css'
         ],
         whitelist: [
           '.*nextra-focus' // I can't ignore colon `:`, use `*` instead
         ]
       },
-      next: { rootDir: 'projects/swr-site' }
+      next: { rootDir: 'projects/docs-site' }
     }
   },
 

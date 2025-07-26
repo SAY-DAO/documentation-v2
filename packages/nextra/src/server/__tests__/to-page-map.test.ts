@@ -1117,7 +1117,7 @@ describe('generatePageMap()', () => {
   })
 
   describe('should work for i18n example', async () => {
-    const cwd = path.join(CWD, '..', '..', 'examples', 'swr-site')
+    const cwd = path.join(CWD, '..', '..', 'projects', 'docs-site')
     const filePaths = await findMetaAndPageFilePaths({
       dir: path.join(cwd, 'app'),
       cwd,

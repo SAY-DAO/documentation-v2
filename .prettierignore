@@ -4,9 +4,9 @@ CHANGELOG.md
 generated-page-map.ts
 packages/tsdoc/src/__tests__/snapshots
 
-examples/swr-site/nextra-remote-filepaths/*.json
+projects/docs-site/nextra-remote-filepaths/*.json
+projects/docs/src/content/features/mdx.mdx
 
-examples/docs/src/content/features/mdx.mdx
 docs/app/docs/guide/ssg/page.mdx
 docs/app/docs/guide/syntax-highlighting/page.mdx
 

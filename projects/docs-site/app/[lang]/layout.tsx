@@ -108,7 +108,7 @@ const RootLayout: FC<LayoutProps> = async ({ children, params }) => {
           banner={banner}
           navbar={navbar}
           footer={footer}
-          docsRepositoryBase="https://github.com/shuding/nextra/blob/main/examples/swr-site"
+          docsRepositoryBase="https://github.com/SAY-DAO/documentation-v2/tree/main/projects"
           i18n={[
             { locale: 'en', name: 'English' },
             { locale: 'ir', name: 'فارسی' },
