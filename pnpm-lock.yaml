@@ -41,9 +41,6 @@ importers:
       '@types/node':
         specifier: ^24.0.15
         version: 24.0.15
-      '@types/webpack':
-        specifier: ^5.28.5
-        version: 5.28.5
       eslint:
         specifier: 9.29.0
         version: 9.29.0(jiti@2.4.2)
@@ -68,6 +65,9 @@ importers:
 
   examples/swr-site:
     dependencies:
+      '@types/webpack':
+        specifier: ^5.28.5
+        version: 5.28.5
       markdown-to-jsx:
         specifier: ^7.4.0
         version: 7.4.0(react@19.1.0)
