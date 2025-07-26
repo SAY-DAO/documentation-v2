@@ -11,6 +11,12 @@
 @import '../../nextra/styles/react-medium-image-zoom.css';
 @import '../css/hamburger.css';
 @import '../css/typesetting-article.css';
+@import "./fonts/fontiran.styl";
+
+@font-face {
+  font-family: "Exodar-outline";
+  src: url(../../nextra-theme-docs/src/fonts/ttf/Exodar-Outline.ttf) format("truetype");
+}
 
 @theme {
 }
@@ -65,4 +71,9 @@ html {
     linear-gradient(to bottom, transparent, #000 20px, transparent 100%),
     linear-gradient(to top, transparent, #000 20px, transparent 100%);
   @apply x:contrast-more:[mask-image:none];
+}
+
+#say-logo {
+  font-family: "Exodar-outline";
+  font-size: 180%;
 }

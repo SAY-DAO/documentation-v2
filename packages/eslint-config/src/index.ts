@@ -280,23 +280,23 @@ const config: Config = tseslint.config(
       'tailwindcss/no-custom-classname': 'off'
     }
   },
- 
+
   // ⚙️ SWR-site example
   {
     // ...TAILWIND_CONFIG,
-    files: ['examples/swr-site/**'],
+    files: ['projects/swr-site/**'],
     settings: {
       tailwindcss: {
         cssFiles: [
-          'examples/swr-site/app/[lang]/styles.css',
-          'examples/swr-site/app/_components/features.css',
+          'projects/swr-site/app/[lang]/styles.css',
+          'projects/swr-site/app/_components/features.css',
           'packages/nextra-theme-docs/dist/style.css'
         ],
         whitelist: [
           '.*nextra-focus' // I can't ignore colon `:`, use `*` instead
         ]
       },
-      next: { rootDir: 'examples/swr-site' }
+      next: { rootDir: 'projects/swr-site' }
     }
   },
 
