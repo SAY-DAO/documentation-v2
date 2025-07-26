@@ -299,20 +299,7 @@ const config: Config = tseslint.config(
       next: { rootDir: 'examples/swr-site' }
     }
   },
-  // ⚙️ blog example
-  {
-    files: ['examples/blog/**'],
-    settings: {
-      next: { rootDir: 'examples/blog' }
-    }
-  },
-  // ⚙️ docs example
-  {
-    files: ['examples/docs/**'],
-    settings: {
-      next: { rootDir: 'examples/docs' }
-    }
-  },
+
   {
     files: ['**/*.d.ts'],
     rules: {
