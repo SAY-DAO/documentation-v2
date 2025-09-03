@@ -210,7 +210,7 @@ $Tokens Minted=65×2×log₂(3+1)=65×2×2=260$
 | Virtual Family |         25% |      65.0 tokens |
 | Relative       |         25% |      65.0 tokens |
 
-<br><br>
+<br /><br />
 
 # Virtual Family Pool Distribution
 
