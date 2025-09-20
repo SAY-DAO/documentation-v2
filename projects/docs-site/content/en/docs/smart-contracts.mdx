@@ -4,12 +4,12 @@ import { Callout, FileTree, Steps } from 'nextra/components'
 export const metadata = {
   sidebarTitle: (
     <>
-      <i>Smart</i>&nbsp;<s>Contracts</s>
+      <i>Smart</i>&nbsp;<i>Contracts</i>
     </>
   )
 }
 
-<div style="direction: ltr; text-align: justify;">
+<div style={{direction: 'ltr', textAlign: 'justify'}}>
 
 # Intro
 In this document, we present a comprehensive, DAO-governed framework for quantifying and rewarding the effort involved in fulfilling “needs” within a tokenized ecosystem. Building upon the analytic hierarchy process (AHP) methodology and sustainability principles originally developed by Kim, Hong, and Majer in their study of [value-driven token economies on blockchain platforms](https://www.mdpi.com/1999-5903/16/5/178), we extend that approach to a broader, need-fulfillment context.
@@ -98,7 +98,7 @@ we do the same for other criteria:
 | Price                         |    50%   |           100.0 |                25.0 |             50.0 |         0.0 |           75.0 |
 | **Difficulty Score**          | **100%** |        **97.5** |           **41.25** |        **56.25** |   **17.50** |      **37.50** |
 
-<br><br>
+<br />
 # Weighting via AHP
  In The analytic hierarchy process (AHP), the decision is structured into a hierarchy of a goal, criteria, and alternatives. Each DAO member submits judgments on every pair of criteria. These pairwise judgments are aggregated into a consensus comparison matrix. The principal eigenvector of this matrix provides a weight for each criterion, yielding community-defined importance levels. This replaces a single-expert weighting scheme with a democratic voting process (one-token-one-vote).
 
@@ -200,7 +200,7 @@ Minted tokens are divided among roles. Let's assume the current split given in t
 | **Relative**          | Mint tokens form the signed needs                    | 25%             |
 ## Example - Token Split
 Let’s say a need scores Difficulty = 65, with 3 donors and Multiplier = 2. Then:
-<br><br>
+<br />
 $Tokens Minted=65×2×log₂(3+1)=65×2×2=260$
 | **Role**       | **Share %** | **Token Amount** |
 | -------------- | ----------: | ---------------: |
@@ -210,7 +210,7 @@ $Tokens Minted=65×2×log₂(3+1)=65×2×2=260$
 | Virtual Family |         25% |      65.0 tokens |
 | Relative       |         25% |      65.0 tokens |
 
-<br><br>
+<br />
 
 # Virtual Family Pool Distribution
 

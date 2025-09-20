@@ -19,6 +19,11 @@ export default {
   'error-handling': {
     display: 'hidden'
   },
+  'dapp': '',
+  'smart-contracts': '',
+  'need-module': '',
+  'blockchain': '',
+  'introduction': '',
   _2: {
     title: <Separator>Advanced</Separator>,
     type: 'separator'
