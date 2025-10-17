@@ -17,13 +17,16 @@ export default {
   },
   'introduction': '',
   'dapp': '',
+  'children': '',
   'need-module': '',
   _2: {
     title: <Separator>Advanced</Separator>,
     type: 'separator'
   },
   'blockchain': '',
+  'wallet': '',
   'smart-contracts': '',
+  'references': '',
   github_link: {
     title: 'GitHub 🐙',
     href: 'https://github.com/say-dao'

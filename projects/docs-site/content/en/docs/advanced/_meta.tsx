@@ -6,5 +6,4 @@ export default {
       footer: false
     }
   },
-  more: 'More: A Super Super Super Super Long Directory',
 }
