@@ -6,11 +6,9 @@ export default {
     ...meta.docs,
     title: 'مستندات'
   },
-
-  about: {
-    ...meta.about,
-    type: 'menu',
-    title: 'درباره',
-
-  },
+  nextra_link: {
+    type: 'page',
+    title: 'وبسایت',
+    href: 'https://saydao.org'
+  }
 }

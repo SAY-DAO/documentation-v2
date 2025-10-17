@@ -15,10 +15,6 @@ export default {
     title: <Separator>Getting Started</Separator>,
     type: 'separator'
   },
-  'getting-started': '',
-  'error-handling': {
-    display: 'hidden'
-  },
   'dapp': '',
   'smart-contracts': '',
   'need-module': '',
