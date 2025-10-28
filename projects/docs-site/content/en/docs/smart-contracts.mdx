@@ -25,7 +25,7 @@ It is important to distinguish difficulty (effort-cost) from urgency (time-criti
 SAY DAO members collaboratively determine the importance of each difficulty criterion using the Analytic Hierarchy Process (AHP). SAY DAO integrates community-driven AHP weighting, governance voting, and on-chain reward logic to score contributions and distribute tokens fairly. DAO members not only can propose different proposals but also can vote on every AHP pairwise comparison for difficulty criteria (e.g. completion time vs. procurement time of a delivered need). Each DAO member submits judgments on how criteria compare; these are aggregated into a consensus pairwise matrix. The AHP eigenvector method then computes weights from this DAO-generated matrix, yielding community-defined importance weights for each criterion. 
 
 Each need is scored using five metrics: 
-- **Creation→Confirmation time ($`t_c`$),**
+- **Creation→Confirmation time ($t_c $),**
 - **Confirmation→Payment time ($t_p $),**
 - **Payment→Order time ($t_o $),**
 - **Order→Delivery time ($t_d $),**
@@ -33,9 +33,7 @@ Each need is scored using five metrics:
 
 Each raw metric is first normalized to a 0–100 percentile scale (0 = lowest, 100 = highest). For time-based metrics we invert the percentile so that shorter times give higher difficulty (e.g.  the $P_{\mathrm{inv}}(t_c) = 100 - \text{percentile}(t_c)$ ), whereas price uses the normal percentile (higher price → higher difficulty). A percentile provides insight about where a value lies within a data set by revealing the percentage of data points below or equal to a specific value. This means if a need’s price is at the 90th percentile, it is higher than 90% of recent prices (so very costly).
 
-```math
-P(x) = 100 \times \frac{\text{rank}(x) - 1}{N - 1}
-```
+$$P(x) = 100 \times \frac{\text{rank}(x) - 1}{N - 1}$$
 
 The overall Difficulty is then the weighted sum of these scores, where $w_x$ are the criterion weights from AHP (see Weighting via AHP section).
 
