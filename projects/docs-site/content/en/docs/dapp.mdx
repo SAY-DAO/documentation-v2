@@ -20,34 +20,20 @@ Decentralized Applications (DApps) refer to software applications that operate i
 Within the SAY ecosystem, the DApp is designed as a tool enabling users to join children's "virtual families" by assuming roles such as father, mother, uncle, aunt, or aunt/uncle, and participate in fulfilling the children’s documented, real-world needs. This decentralized structure ensures that every stage—from identifying needs and sourcing resources to purchasing and delivery—is recorded on a transparent, data-driven infrastructure. Consequently, each user can experience their participation directly and without reliance on a central authority.
 This DApp not only bridges social workers, NGOs, and volunteers, but the data generated also serves as a valuable resource for researchers and social policymakers. Thus, every financial contribution within this ecosystem not only provides immediate aid but also actively contributes to strengthening systematic understanding of poverty and its solutions.
 
+## Software for Virtual Families
+### Registration and Role Selection
+Interested individuals can register in the SAY application using their email address or phone number and by setting a password. Afterwards, by visiting the 'Search' page, it becomes possible to join a child's virtual family.
+
+Currently, virtual families can only access children's profiles through the 'Random Selection' method. After listening to a child's voice and reading their story, the virtual family selects their appropriate role (father, mother, aunt, uncle) and becomes a member of the child's family.
 
 
+### Fulfilling Children's Needs
+Recent registered needs for each child will be communicated to the members of their virtual family via SMS or email. Families can view the list of the child's needs at any time and proceed to pay for and supply them. For each need, it is possible to pay its cost in full, or partially through cooperation with other members of the virtual family. After a need is paid for, virtual families can visit the 'Fulfilled Needs' section to view the receipt of supply and delivery at every stage.
+
+### Token Allocation
+As the child's needs are met, tokens will be minted for those virtual family members who participated in paying for that need, through processes and calculations which are fully explained in the [Smart Contracts](https://docs-v2.saydao.org/en/docs/smart-contracts) section. A coefficient named the 'Distance Coefficient' is defined and used to control the population of members in each child's family. If you have not yet participated in fulfilling a need for a child whose family you are a member of, this coefficient will not be calculated, and the process for signing and confirming the need will be halted. To calculate your distance coefficient, you must either select the 'Leave Child's Family' option on the child's page, or pay for one of the child's needs. Therefore, in the end, each virtual family member's participation will influence the token creation process.
 
 
-## Concepts 
-### Credit
-Displays the amount of credit reimbursed to your account.
-### Paid Items
-Needs you have partially or fully contributed to, which have now been fulfilled.
-### Distance Coefficient
-The Distance Coefficient measures participation levels within virtual families to regulate their size. This coefficient is not calculated—and need-signing/approval is suspended—if you have not yet contributed to fulfilling any needs of a child whose virtual family you joined. To activate calculation, you must either:
-(a) Select the “Leave Family” option on the child’s profile, or
-(b) Fulfill at least one of the child’s needs.
-The coefficient is computed by comparing:
-- **The number of the child’s needs fulfilled by their virtual family**
-- **Against the activity levels of family members**
-Example: By ranking all uncles’ fulfilled needs across the SAY ecosystem into statistical quartiles, your contribution count (as an uncle) is placed within a quartile. The coefficient is derived from this position and ultimately determines the number of tokens generated per fulfilled need.
-
-### Difficulty Coefficient
-The Difficulty Coefficient optimizes need-fulfillment timelines by measuring the relative complexity of each need. It is computed through stage-duration comparisons between a need and similar needs and cost comparisons against recently fulfilled needs.
-Factors influencing the coefficient include:
-- **Time interval between a need’s registration by a social worker and witness approval**
-- **Time interval between approval and payment by the virtual family**
-- **Time interval between payment and logistics (procurement by mediators → child delivery)**
-These calculations compare the performance of each need stage against quartiles of similar needs (e.g., needs within the same category, such as healthcare). This coefficient is ultimately used to calculate the number of tokens generatable per need.
-
-### Participation Coefficient
-The Participation Coefficient per need is measured to encourage collaborative fulfillment. This coefficient is calculated based on the number of virtual family members contributing to each need’s payment.
 
 
 ## Digital Signature
@@ -59,10 +45,10 @@ Thus, the wallet signature is the most critical element for verifying identity a
 
 ## Digital Signature of a Need
 Every need fulfilled for a child by their virtual family and delivered to the child enters a new phase. In this phase, the need becomes eligible for digital signature by the social worker, the witness, the mediator, and the virtual family members. 
-This process is a prerequisite for developing SAY on a blockchain infrastructure and transitioning into a decentralized, autonomous organization. [Learn more about such organizations here.]
+This process is a prerequisite for developing SAY on a blockchain infrastructure and transitioning into a decentralized, autonomous organization.
 1.	The social worker who registered the need must provide the initial signature. They re-verify need specifications, NGO details, Child information, Receipts, and confirms them with their signature.
 2.	The second signature is provided by the virtual family member(s) who funded the need to verify social worker’s receipts, online store invoices, and bank transaction records.
 3.	The mediator—who purchased the good(s) from the online store—provides the third signature to confirm procurement.
-4.	The witness (active in quality oversight since need initiation) provides the final signature to authenticate the need and store it on the decentralized IPFS network. [Learn more about IPFS here.]
+4.	The witness (active in quality oversight since need initiation) provides the final signature to authenticate the need and store it on the decentralized IPFS network.
 
 </div> 
