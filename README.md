@@ -42,7 +42,7 @@ You can also debug them together with a website locally. For instance, to start
 `projects/docs` locally, run
 
 ```bash
-pnpm --filter example-docs dev
+ pnpm --filter docs-site dev
 ```
 
 Any change to `example/docs` will be re-rendered instantly.

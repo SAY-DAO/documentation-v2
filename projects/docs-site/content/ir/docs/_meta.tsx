@@ -12,20 +12,22 @@ export const Separator: FC<{ children: ReactNode }> = ({ children }) => {
 
 export default {
   _: {
-    title: <Separator>Getting Started</Separator>,
+    title: <Separator>اولین قدم</Separator>,
     type: 'separator'
   },
   'introduction': '',
-  'dapp': '',
   'need-module': '',
+  'dapp': '',
+  'children': '',
   _2: {
-    title: <Separator>Advanced</Separator>,
+    title: <Separator>گام بعدی</Separator>,
     type: 'separator'
   },
   'blockchain': '',
+  'wallet': '',
   'smart-contracts': '',
-  github_link: {
-    title: 'GitHub 🐙',
+  references: {
+    title: 'منابع 🐙',
     href: 'https://github.com/say-dao'
   },
 }
