@@ -50,11 +50,11 @@ const RootLayout: FC<LayoutProps> = async ({ children, params }) => {
   const dictionary = await getDictionary(lang)
   let pageMap = await getPageMap(`/${lang}`)
 
-  const banner = (
-    <Banner storageKey="SAY-DAO-2">
-      SAY-DAO 2.0 is out! <Link href="#">Read more →</Link>
-    </Banner>
-  )
+  // const banner = (
+  //   <Banner storageKey="SAY-DAO-2">
+  //     SAY-DAO 2.0 is out! <Link href="#">Read more →</Link>
+  //   </Banner>
+  // )
   const navbar = (
     <Navbar
       logo={
@@ -68,7 +68,7 @@ const RootLayout: FC<LayoutProps> = async ({ children, params }) => {
         </>
       }
       projectLink="https://github.com/say-dao"
-      chatLink="https://discord.com"
+      // chatLink="https://discord.com"
     >
       <LocaleSwitch lite />
     </Navbar>
@@ -105,7 +105,7 @@ const RootLayout: FC<LayoutProps> = async ({ children, params }) => {
       />
       <body>
         <Layout
-          banner={banner}
+          // banner={banner}
           navbar={navbar}
           footer={footer}
           docsRepositoryBase="https://github.com/SAY-DAO/documentation-v2/tree/main/projects/docs-site"
