@@ -26,8 +26,15 @@ export default {
   'blockchain': '',
   'wallet': '',
   'smart-contracts': 'Token-economics',
+  _3: {
+    title: <Separator>References</Separator>,
+    type: 'separator'
+  },
   references: {
-    title: 'GitHub 🐙',
-    href: 'https://github.com/say-dao'
+    title: 'Appendices 🐙',
+  },
+  api: {
+    title: 'API 🤖',
+    href: 'https://nest.saydao.org/docs'
   },
 }

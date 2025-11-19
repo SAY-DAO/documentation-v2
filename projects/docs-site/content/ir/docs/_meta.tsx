@@ -26,8 +26,15 @@ export default {
   'blockchain': '',
   'wallet': '',
   'smart-contracts': 'اقتصاد توکنی',
+  _3: {
+    title: <Separator>منابع</Separator>,
+    type: 'separator'
+  },
   references: {
-    title: 'منابع 🐙',
-    href: 'https://github.com/say-dao'
+    title: 'پیوست‌ها 🐙',
+  },
+  api: {
+    title: 'API 🤖',
+    href: 'https://nest.saydao.org/docs'
   },
 }
