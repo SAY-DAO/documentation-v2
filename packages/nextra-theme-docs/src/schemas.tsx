@@ -102,7 +102,7 @@ export const LayoutPropsSchema = z.strictObject({
   editLink: reactNode.default('Edit this page').meta({
     description: 'Content of the edit link.'
   }),
-  feedback: feedbackSchema.default(feedbackSchema.parse({})),
+  // feedback: feedbackSchema.default(feedbackSchema.parse({})),
   footer: reactNode
     // @TODO added in zod v4
     .optional()

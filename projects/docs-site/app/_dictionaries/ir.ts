@@ -5,7 +5,9 @@ export default {
   light: 'روشن',
   system: 'سیستم',
   backToTop: 'برو بالا',
+  title:'در این صفحه',
   lastUpdated: 'آخرین به روز‌رسانی',
+  search: 'جستجو در مستندات ...',
   logo: {
     title: 'Sharing love and resources. Literally'
   },
@@ -13,6 +15,7 @@ export default {
   link: {
     vercel: 'www.saydao.org'
   },
+  feedback:'Question? Give us feedback',
   lightweight: 'Ligero',
   realtime: 'لحظه‌ای',
   suspense: 'قطعی',

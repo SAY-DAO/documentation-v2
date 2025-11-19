@@ -25,7 +25,7 @@ export const ThemeSwitch: FC<ThemeSwitchProps> = ({ lite, className }) => {
   return (
     <Select
       className={cn('x:flex x:items-center x:gap-2', className)}
-      title="Change theme"
+      // title="Change theme"
       options={[
         { id: 'light', name: themeSwitch.light },
         { id: 'dark', name: themeSwitch.dark },

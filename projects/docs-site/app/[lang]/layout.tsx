@@ -9,7 +9,7 @@ import {
   LocaleSwitch,
   Navbar
 } from 'nextra-theme-docs'
-import { Banner, Head } from 'nextra/components'
+import { Banner, Head, Search } from 'nextra/components'
 import { getPageMap } from 'nextra/page-map'
 import type { FC, ReactNode } from 'react'
 import { getDictionary, getDirection } from '../_dictionaries/get-dictionary'
@@ -101,7 +101,7 @@ const RootLayout: FC<LayoutProps> = async ({ children, params }) => {
           // banner={banner}
           navbar={navbar}
           footer={footer}
-          docsRepositoryBase="https://github.com/SAY-DAO/documentation-v2/tree/main/projects/docs-site"
+          docsRepositoryBase="https://github.com/SAY-DAO/documentation-v2"
           i18n={[
             { locale: 'en', name: 'English' },
             { locale: 'ir', name: 'فارسی' },
@@ -112,11 +112,16 @@ const RootLayout: FC<LayoutProps> = async ({ children, params }) => {
           }}
           toc={{
             backToTop: dictionary.backToTop,
+            title: dictionary.title,
             // extraContent: (
             // eslint-disable-next-line @next/next/no-img-element -- we can't use with external urls
             // <img alt="placeholder cat" src="https://placecats.com/300/201" />
             // )
           }}
+          search={<Search placeholder={dictionary.search} />}
+          // feedback={{
+          //   content: dictionary.feedback,
+          // }}
           editLink={dictionary.editPage}
           pageMap={pageMap}
           nextThemes={{ defaultTheme: 'dark' }}
@@ -130,7 +135,7 @@ const RootLayout: FC<LayoutProps> = async ({ children, params }) => {
           {children}
         </Layout>
       </body>
-    </html>
+    </html >
   )
 }
 

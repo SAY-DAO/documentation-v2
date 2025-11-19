@@ -482,7 +482,7 @@ export const Sidebar: FC = () => {
               <Button
                 aria-expanded={isExpanded}
                 aria-controls={sidebarControlsId}
-                title={isExpanded ? 'Collapse sidebar' : 'Expand sidebar'}
+                // title={isExpanded ? 'Collapse sidebar' : 'Expand sidebar'}
                 className={({ hover }) =>
                   cn(
                     'x:rounded-md x:p-2',

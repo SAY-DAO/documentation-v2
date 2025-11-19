@@ -4,6 +4,8 @@ export default {
   system: 'System',
   backToTop: 'Scroll to top',
   lastUpdated: 'Last updated on',
+  title:'On this Page',
+  search:'Search documentation...',
   logo: {
     title: 'React Hooks for Data Fetching'
   },
@@ -12,6 +14,7 @@ export default {
   link: {
     vercel: 'https://saydao.org'
   },
+  feedback:'Question? Give us feedback',
   lightweight: 'Lightweight',
   realtime: 'Realtime',
   suspense: 'Suspense',
