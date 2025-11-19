@@ -27,7 +27,7 @@ export const TOC: FC<TOCProps> = ({ filePath, pageTitle }) => {
   const themeConfig = useThemeConfig()
   const toc = useTOC()
   const hasMetaInfo =
-    themeConfig.feedback && themeConfig.feedback.content ||
+    // themeConfig.feedback && themeConfig.feedback.content ||
     themeConfig.editLink ||
     themeConfig.toc.extraContent ||
     themeConfig.toc.backToTop
@@ -52,13 +52,13 @@ export const TOC: FC<TOCProps> = ({ filePath, pageTitle }) => {
     })
   }, [activeSlug])
 
-  const feedbackLink =
-    (themeConfig.feedback && themeConfig.feedback.link) ??
-    getGitIssueUrl({
-      labels: themeConfig.feedback && themeConfig.feedback.labels,
-      repository: themeConfig.docsRepositoryBase,
-      title: `Feedback for “${pageTitle}”`
-    })
+  // const feedbackLink =
+  //   (themeConfig.feedback && themeConfig.feedback.link) ??
+  //   getGitIssueUrl({
+  //     labels: themeConfig.feedback && themeConfig.feedback.labels,
+  //     repository: themeConfig.docsRepositoryBase,
+  //     title: `Feedback for “${pageTitle}”`
+  //   })
 
   return (
     <div
@@ -115,11 +115,11 @@ export const TOC: FC<TOCProps> = ({ filePath, pageTitle }) => {
             hasHeadings && 'x:border-t nextra-border'
           )}
         >
-          {themeConfig.feedback && themeConfig.feedback.content && (
+          {/* {themeConfig.feedback && themeConfig.feedback.content && (
             <Anchor className={linkClassName} href={feedbackLink}>
               {themeConfig.feedback.content}
             </Anchor>
-          )}
+          )} */}
 
           {filePath && themeConfig.editLink && (
             <Anchor
