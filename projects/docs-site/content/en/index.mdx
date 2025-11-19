@@ -6,21 +6,29 @@ searchable: false
 import { Features } from '@app/_components/features'
 import { Callout, Tabs } from 'nextra/components'
 
-# SAY DAO
-
-<Features lang={props.params.lang} title={metadata.title} />
-
-## Community
-
-<p className="mt-6 flex h-6 gap-2">
-  <img alt="stars" src="https://badgen.net/github/stars/vercel/swr" />
-  <img alt="downloads" src="https://badgen.net/npm/dt/swr" />
-  <img alt="license" src="https://badgen.net/npm/license/swr" />
-</p>
-
-SWR is created by the same team behind [Next.js](https://nextjs.org), the React
-framework. Follow [@vercel](https://twitter.com/vercel) on Twitter for future
-project updates.
-
-Feel free to join the
-[discussions on GitHub](https://github.com/say-dao/discussions)!
+<div style={{
+  display: 'flex',
+  justifyContent: 'center',
+  marginTop: '50px',
+  flexWrap: 'wrap',
+  gap: '10px',
+}}>
+  <Features 
+    title="Product 1" 
+    description="This is product 1 description." 
+    link="/product-1" 
+    image="https://via.placeholder.com/300" 
+  />
+  <Features 
+    title="Product 2" 
+    description="This is product 2 description." 
+    link="/product-2" 
+    image="https://via.placeholder.com/300" 
+  />
+  <Features 
+    title="Product 3" 
+    description="This is product 3 description." 
+    link="/product-3" 
+    image="https://via.placeholder.com/300" 
+  />
+</div>

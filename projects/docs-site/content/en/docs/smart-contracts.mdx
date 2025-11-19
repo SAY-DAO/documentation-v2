@@ -11,17 +11,17 @@ export const metadata = {
 
 <div style={{direction: 'ltr', textAlign: 'justify'}}>
 
-# Intro
+## Intro
 In this document, we present a comprehensive, DAO-governed framework for quantifying and rewarding the effort involved in fulfilling “needs” within a tokenized ecosystem. Building upon the analytic hierarchy process (AHP) methodology and sustainability principles originally developed by Kim, Hong, and Majer in their study of [value-driven token economies on blockchain platforms](https://www.mdpi.com/1999-5903/16/5/178), we extend that approach to a broader, need-fulfillment context.
 
-By integrating AHP’s structured decision-making with on-chain governance, our framework not only quantifies effort in a transparent, adaptable manner but also embeds democratic accountability at every stage of token issuance and distribution.
-# Difficulty Score 
-Every step from discovering to delivering a need to a child vary widely in complexity and urgency. Our token-reward system quantify each need’s difficulty and reward all participants appropriately. We use the Analytic Hierarchy Process (AHP) to combine multiple difficulty factors into a single score. Delivered needs with higher difficulty generate more tokens, scaled by a multiplier and the number of virtual families involved. All parameters that determine the difficulty score of a need (weights, caps, splits, etc.) are governed by the DAO on-chain to ensure transparency and adaptability. A need’s Difficulty Score is the 0–100 value we compute by combining its five criterion percentiles via the DAO-voted AHP weights.
+By integrating AHP's structured decision-making with on-chain governance, our framework not only quantifies effort in a transparent, adaptable manner but also embeds democratic accountability at every stage of token issuance and distribution.
+## Difficulty Score 
+Every step from discovering to delivering a need to a child vary widely in complexity and urgency. Our token-reward system quantify each need's difficulty and reward all participants appropriately. We use the Analytic Hierarchy Process (AHP) to combine multiple difficulty factors into a single score. Delivered needs with higher difficulty generate more tokens, scaled by a multiplier and the number of virtual families involved. All parameters that determine the difficulty score of a need (weights, caps, splits, etc.) are governed by the DAO on-chain to ensure transparency and adaptability. A need's Difficulty Score is the 0–100 value we compute by combining its five criterion percentiles via the DAO-voted AHP weights.
 
-# Difficulty vs. Urgency
+### Difficulty vs. Urgency
 It is important to distinguish difficulty (effort-cost) from urgency (time-criticality). Our scoring model rewards how hard a need is (longer delivery times, higher cost, etc.), not how quickly it must be addressed. For example, an expensive medical kit (high difficulty) might not be urgently needed today, while a cheap item needed immediately is urgent but low difficulty. Our framework uses difficulty solely to allocate tokens (higher tokens for more needs which took more efforts), whereas urgency would be handled by separate rules outside this scoring mechanism.
 
-# DAO-Governed AHP Difficulty Scoring 
+## DAO-Governed AHP Difficulty Scoring 
 SAY DAO members collaboratively determine the importance of each difficulty criterion using the Analytic Hierarchy Process (AHP). SAY DAO integrates community-driven AHP weighting, governance voting, and on-chain reward logic to score contributions and distribute tokens fairly. DAO members not only can propose different proposals but also can vote on every AHP pairwise comparison for difficulty criteria (e.g. completion time vs. procurement time of a delivered need). Each DAO member submits judgments on how criteria compare; these are aggregated into a consensus pairwise matrix. The AHP eigenvector method then computes weights from this DAO-generated matrix, yielding community-defined importance weights for each criterion. 
 
 Each need is scored using five metrics: 
@@ -31,7 +31,7 @@ Each need is scored using five metrics:
 - **Order→Delivery time ($t_d $),**
 - **Need Price.**
 
-Each raw metric is first normalized to a 0–100 percentile scale (0 = lowest, 100 = highest). For time-based metrics we invert the percentile so that shorter times give higher difficulty (e.g.  the $P_{\mathrm{inv}}(t_c) = 100 - \text{percentile}(t_c)$ ), whereas price uses the normal percentile (higher price → higher difficulty). A percentile provides insight about where a value lies within a data set by revealing the percentage of data points below or equal to a specific value. This means if a need’s price is at the 90th percentile, it is higher than 90% of recent prices (so very costly).
+Each raw metric is first normalized to a 0-100 percentile scale (0 = lowest, 100 = highest). For time-based metrics we invert the percentile so that shorter times give higher difficulty (e.g.  the $P_{\mathrm{inv}}(t_c) = 100 - \text{percentile}(t_c)$ ), whereas price uses the normal percentile (higher price → higher difficulty). A percentile provides insight about where a value lies within a data set by revealing the percentage of data points below or equal to a specific value. This means if a need's price is at the 90th percentile, it is higher than 90% of recent prices (so very costly).
 
 ```math
 P(x) = 100 \times \frac{\text{rank}(x) - 1}{N - 1}
@@ -53,7 +53,7 @@ The overall Difficulty is then the weighted sum of these scores, where $w_x$ are
 where $P(x)$ and the $P_{\mathrm{inv}}(x)$ are the normalized score for each criterion. A higher difficulty means the need is harder or more resource-intensive to fulfill.
 
 
-## Example
+### Example
 To illustrate, assume the DAO has decided initial weights: $w_{t_c}$ = 15%, $w_{t_p}$ = 15%, $w_{t_o}$ = 10%, $w_{t_d}$ = 10%, $w_{\text{price}}$ = 50%. N is the total number of items, therefore N = 5.
 
 |     **Need**    | **$t_c$ (days)** | **$t_p$ (days)** | **$t_o$ (days)** | **$t_d$ (days)** | **$Price$ (USD)** |
@@ -100,12 +100,12 @@ we do the same for other criteria:
 | **Difficulty Score**          | **100%** |        **97.5** |           **41.25** |        **56.25** |   **17.50** |      **37.50** |
 
 <br />
-# Weighting via AHP
+## Weighting via AHP
  In The analytic hierarchy process (AHP), the decision is structured into a hierarchy of a goal, criteria, and alternatives. Each DAO member submits judgments on every pair of criteria. These pairwise judgments are aggregated into a consensus comparison matrix. The principal eigenvector of this matrix provides a weight for each criterion, yielding community-defined importance levels. This replaces a single-expert weighting scheme with a democratic voting process (one-token-one-vote).
 
-**Why**: The five criteria above may not be equally important (e.g. price might matter more than delivery time). DAO members use AHP’s structured voting to set these weights.
+**Why**: The five criteria above may not be equally important (e.g. price might matter more than delivery time). DAO members use AHP's structured voting to set these weights.
 
-- **Pairwise voting:** DAO participants compare criteria two at a time using Saaty’s 1–9 scale (1 = equal importance, 9 = one extremely more important). For example, a member might judge Price to be “5 times more important” than Order→Delivery time. Each comparison is aggregated (e.g., by geometric mean) into a group pairwise comparison matrix.
+- **Pairwise voting:** DAO participants compare criteria two at a time using Saaty's 1–9 scale (1 = equal importance, 9 = one extremely more important). For example, a member might judge Price to be “5 times more important” than Order→Delivery time. Each comparison is aggregated (e.g., by geometric mean) into a group pairwise comparison matrix.
 
 - **Compute weights:** We compute the principal eigenvector of the matrix to obtain normalized weights $(w_{\text{tc}}, w_{\text{tp}}, w_{\text{to}}, w_{\text{td}}, w_{\text{price}} )$. This eigenvector reflects the relative importance of each criterion.
 
@@ -115,10 +115,10 @@ we do the same for other criteria:
   - $\lambda_{\max}$: The principal (largest) eigenvalue of the comparison matrix.
   - $n$: The number of criteria (matrix size, e.g. n=5).
   - $CI$: Consistency index.
-  - $RI$: It depends only on n and is obtained from Saaty’s table.
+  - $RI$: It depends only on n and is obtained from Saaty's table.
 
 
-# Token Minting and Allocation
+## Token Minting and Allocation
 After computing Difficulty Score (typically scaled 0–100), new tokens are minted for that need. Then we apply a collaboration multiplier which is explained in the Multiplier Structure section.  the DAO-minted reward is multiplied by $log_2 (v + 1)$ where $v$ virtual families contributed to the need,. Thus:
 
 $$Tokens = Difficulty × Multiplier × log_2(v + 1)$$
@@ -188,19 +188,19 @@ $$
 
 
 
-# Role-Based Token Splits
+## Role-Based Token Splits
 Minted tokens are divided among roles. Let's assume the current split given in the following table, however these parameters will be set or updated by the DAO votes:
 
 
 | **Role**           | **Purpose**                                                     | **Token Share** |
 | ------------------ | --------------------------------------------------------------- | --------------- |
-| **Social Worker**  | Created the need and verified the child’s requirements          | 20%             |
+| **Social Worker**  | Created the need and verified the child's requirements          | 20%             |
 | **Auditor**        | Reviewed and approved the legitimacy and compliance of the need | 15%             |
 | **Purchaser**      | Completed the transaction, ordering the item from a supplier    | 15%             |
 | **Virtual Family** | The **Virtual Family pool**, who collaborated on paying for the need                 | 25%             |
 | **Relative**          | Mint tokens form the signed needs                    | 25%             |
-## Example - Token Split
-Let’s say a need scores Difficulty = 65, with 3 donors and Multiplier = 2. Then:
+### Example - Token Split
+Let's say a need scores Difficulty = 65, with 3 donors and Multiplier = 2. Then:
 <br />
 $Tokens Minted=65×2×log₂(3+1)=65×2×2=260$
 | **Role**       | **Share %** | **Token Amount** |
@@ -213,8 +213,8 @@ $Tokens Minted=65×2×log₂(3+1)=65×2×2=260$
 
 <br />
 
-# Virtual Family Pool Distribution
+## Virtual Family Pool Distribution
 
-When a child’s need is fulfilled, a relative can mint tokens for that specific need. Contributors within the virtual family pool (e.g., mother, father, aunt, uncle) earn a share of those tokens proportional to their individual payment amounts. In addition, each contributor receives a bonus multiplier based on their **30-day performance percentile** among peers in the same role—for example, a mother’s activity is ranked against all other mothers. Any contributor whose combined performance percentile exceeds the median (i.e., &gt; 50 percentile) increases the reward multiplier for everyone on that need. By benchmarking each role against its own peer group, SAY encourages family members to match or exceed ecosystem norms, ensuring top performers boost collective rewards.
+When a child's need is fulfilled, a relative can mint tokens for that specific need. Contributors within the virtual family pool (e.g., mother, father, aunt, uncle) earn a share of those tokens proportional to their individual payment amounts. In addition, each contributor receives a bonus multiplier based on their **30-day performance percentile** among peers in the same role—for example, a mother's activity is ranked against all other mothers. Any contributor whose combined performance percentile exceeds the median (i.e., &gt; 50 percentile) increases the reward multiplier for everyone on that need. By benchmarking each role against its own peer group, SAY encourages family members to match or exceed ecosystem norms, ensuring top performers boost collective rewards.
 
 </div>

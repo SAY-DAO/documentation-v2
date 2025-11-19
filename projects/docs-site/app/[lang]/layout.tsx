@@ -17,19 +17,12 @@ import './styles.css'
 
 export const metadata: Metadata = {
   description:
-    'SAY-DAO is a React Hooks library for data fetching. SAY-DAO first returns the data from cache (stale), then sends the fetch request (revalidate), and finally comes with the up-to-date data again.',
+    'The Say DAO (Decentralized Autonomous Organization) is a decentralized structure that enables collective decision-making and the transparent management of resources dedicated to supporting children. Within this framework, all transactions and contributions are recorded in a decentralized manner, ensuring they are fully traceable and verifiable.',
   title: {
     absolute: '',
     template: '%s | SAY-DAO'
   },
   metadataBase: new URL('https://saydao.org'),
-  openGraph: {
-    images:
-      'https://assets.vercel.com/image/upload/v1572282926/swr/twitter-card.jpg'
-  },
-  twitter: {
-    site: '@vercel'
-  },
   appleWebApp: {
     title: 'SAY-DAO'
   },
@@ -68,7 +61,7 @@ const RootLayout: FC<LayoutProps> = async ({ children, params }) => {
         </>
       }
       projectLink="https://github.com/say-dao"
-      // chatLink="https://discord.com"
+    // chatLink="https://discord.com"
     >
       <LocaleSwitch lite />
     </Navbar>
@@ -78,7 +71,7 @@ const RootLayout: FC<LayoutProps> = async ({ children, params }) => {
       <a
         rel="noreferrer"
         target="_blank"
-        className="x:focus-visible:nextra-focus flex items-center gap-2 font-semibold"
+        className="focus-visible:nextra-focus flex items-center gap-2 font-semibold"
         href={dictionary.link.vercel}
       >
         {dictionary.poweredBy}

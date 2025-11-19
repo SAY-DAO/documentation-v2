@@ -16,15 +16,17 @@ export default {
     type: 'separator'
   },
   'introduction': '',
-  'dapp': '',
   'need-module': '',
+  'dapp': '',
+  'children': '',
   _2: {
     title: <Separator>Advanced</Separator>,
     type: 'separator'
   },
   'blockchain': '',
-  'smart-contracts': '',
-  github_link: {
+  'wallet': '',
+  'smart-contracts': 'Token-economics',
+  references: {
     title: 'GitHub 🐙',
     href: 'https://github.com/say-dao'
   },

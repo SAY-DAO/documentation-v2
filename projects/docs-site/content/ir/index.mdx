@@ -1,11 +1,28 @@
 ---
-title: مستندات
+title: React Hooks for Data Fetching
 searchable: false
 ---
 
 import { Features } from '@app/_components/features'
-import { Callout } from 'nextra/components'
+import { Callout, Tabs } from 'nextra/components'
 
-# SAY DAO
-
-<Features lang={props.params.lang} title={metadata.title} />
+<div style={{
+  display: 'flex',
+  justifyContent: 'center',
+  marginTop: '50px',
+  flexWrap: 'wrap',
+  gap: '10px',
+}}>
+  <Features 
+    title="Documentations" 
+    link="/product-1" 
+  />
+  <Features 
+    title="Dapplication" 
+    link="/product-1" 
+  />
+  <Features 
+    title="Ecosystem" 
+    link="/product-1" 
+  />
+</div>

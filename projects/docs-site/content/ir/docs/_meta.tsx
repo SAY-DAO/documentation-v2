@@ -25,7 +25,7 @@ export default {
   },
   'blockchain': '',
   'wallet': '',
-  'smart-contracts': '',
+  'smart-contracts': 'اقتصاد توکنی',
   references: {
     title: 'منابع 🐙',
     href: 'https://github.com/say-dao'
