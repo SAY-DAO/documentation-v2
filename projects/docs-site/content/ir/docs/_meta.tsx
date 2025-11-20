@@ -15,16 +15,16 @@ export default {
     title: <Separator>اولین قدم</Separator>,
     type: 'separator'
   },
-  'introduction': '',
-  'need-module': '',
-  'dapp': '',
-  'children': '',
+  'introduction': 'مقدمه',
+  'need-module': 'ماژول نیاز',
+  'dapp': 'دپلیکیشن',
+  'children': 'درباره کودکان',
   _2: {
     title: <Separator>گام بعدی</Separator>,
     type: 'separator'
   },
-  'blockchain': '',
-  'wallet': '',
+  'blockchain': 'آشنایی با بلاک‌چین',
+  'wallet': 'کیف پول',
   'smart-contracts': 'اقتصاد توکنی',
   _3: {
     title: <Separator>منابع</Separator>,
