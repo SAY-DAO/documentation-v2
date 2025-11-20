@@ -124,7 +124,7 @@ const RootLayout: FC<LayoutProps> = async ({ children, params }) => {
           // }}
           editLink={dictionary.editPage}
           pageMap={pageMap}
-          nextThemes={{ defaultTheme: 'dark' }}
+          nextThemes={{ defaultTheme: 'light' }}
           lastUpdated={<LastUpdated>{dictionary.lastUpdated}</LastUpdated>}
           themeSwitch={{
             dark: dictionary.dark,
