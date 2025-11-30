@@ -9,7 +9,7 @@ import {
   LocaleSwitch,
   Navbar
 } from 'nextra-theme-docs'
-import { Banner, Head, Search } from 'nextra/components'
+import { Banner, Head, Search, GoogleAnalytic } from 'nextra/components'
 import { getPageMap } from 'nextra/page-map'
 import type { FC, ReactNode } from 'react'
 import { getDictionary, getDirection } from '../_dictionaries/get-dictionary'
@@ -86,6 +86,7 @@ const RootLayout: FC<LayoutProps> = async ({ children, params }) => {
   )
   return (
     <html lang={lang} dir={getDirection(lang)} suppressHydrationWarning>
+      <GoogleAnalytic />
       <Head
         backgroundColor={{
           dark: 'rgb(15,23,42)',
