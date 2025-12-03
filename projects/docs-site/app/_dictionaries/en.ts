@@ -7,7 +7,7 @@ export default {
   title:'On this Page',
   search:'Search documentation...',
   logo: {
-    title: 'SAY DAO Ecosystem'
+    title: 'SAY DAO Docs'
   },
   // notFound: 'This page could not be found',
   poweredBy: 'Powered by',
