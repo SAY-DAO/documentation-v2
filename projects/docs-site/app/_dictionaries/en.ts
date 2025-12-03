@@ -7,7 +7,7 @@ export default {
   title:'On this Page',
   search:'Search documentation...',
   logo: {
-    title: 'React Hooks for Data Fetching'
+    title: 'SAY DAO Ecosystem'
   },
   // notFound: 'This page could not be found',
   poweredBy: 'Powered by',
