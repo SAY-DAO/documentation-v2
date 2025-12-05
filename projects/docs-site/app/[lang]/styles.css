@@ -4,14 +4,22 @@
 
 @theme {}
 
+/* Light mode */
 body {
   --bg-dot-color: #d1d1d1;
 
-  .dark & {
-    --bg-dot-color: rgb(139, 80, 11);
-  }
+  background:
+    linear-gradient(to bottom, transparent, rgb(var(--nextra-bg)) 300px),
+    fixed 0 0 / 20px 20px radial-gradient(var(--bg-dot-color) 1px, transparent 0),
+    fixed 10px 10px / 20px 20px radial-gradient(var(--bg-dot-color) 1px, transparent 0);
+}
 
-  background: linear-gradient(to bottom, transparent, rgb(11, 18, 32) 300px),
-  fixed 0 0 / 20px 20px radial-gradient(var(--bg-dot-color) 1px, transparent 0),
-  fixed 10px 10px / 20px 20px radial-gradient(var(--bg-dot-color) 1px, transparent 0);
+/* Dark mode */
+.dark body {
+  --bg-dot-color: rgb(139, 80, 11);
+
+  background:
+    linear-gradient(to bottom, transparent, rgb(11, 18, 32)  300px),
+    fixed 0 0 / 20px 20px radial-gradient(var(--bg-dot-color) 1px, transparent 0),
+    fixed 10px 10px / 20px 20px radial-gradient(var(--bg-dot-color) 1px, transparent 0);
 }
