@@ -9,7 +9,6 @@ body {
 
   .dark & {
     --bg-dot-color: rgb(139, 80, 11);
-    background: rgb(11, 18, 32) !important;
   }
 
   background: linear-gradient(to bottom, transparent, rgb(var(--nextra-bg)) 300px),
