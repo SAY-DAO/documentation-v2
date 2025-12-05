@@ -2,8 +2,8 @@ import type { MetadataRoute } from 'next'
 
 export default function manifest(): MetadataRoute.Manifest {
   return {
-    name: 'SAY-DAO',
-    short_name: 'SAY',
+    name: 'SAY-DOCS',
+    short_name: 'Docs',
     icons: [
       {
         src: '/android-chrome-192x192.png',
