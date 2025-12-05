@@ -16,7 +16,7 @@ body {
 
 /* Dark mode */
 .dark body {
-  --bg-dot-color: rgb(139, 80, 11);
+  --bg-dot-color:rgb(85, 52, 29);
 
   background:
     linear-gradient(to bottom, transparent, rgb(11, 18, 32)  300px),
